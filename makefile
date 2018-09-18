@@ -1,7 +1,7 @@
 S=task1
 P=task2
 
-all: $(S)
+all: $(S) $(P)
 
 $(S): $(S).c
 	gcc -static $(S).c -o $(S)
