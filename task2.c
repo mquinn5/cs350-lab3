@@ -15,7 +15,7 @@ int main(int argc, char**argv){
 		for(int i=0; i<argc-1; i++)
 			args[i]=argv[i+1];
 		args[argc]=NULL;
-		execvp(argv[1] args);
+		execvp(argv[1], args);
 	} else { //if parent
 		c_id = wait(NULL);
 		printf(">>> In PARENT: successfully waited child (pid=%d)\n", c_id);
