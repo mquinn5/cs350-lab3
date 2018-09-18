@@ -1,7 +1,11 @@
-S=lab3
+S=task1
+
 
 all: $(S)
 
+$(S): $(S).c
+	gcc -static $(S).c -o $(S)
+	
 $(S): $(S).c
 	gcc -static $(S).c -o $(S)
 	
